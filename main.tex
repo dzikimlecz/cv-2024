@@ -1,19 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Developer CV
-% LaTeX Template
-% Version 1.0 (28/1/19)
-%
-% This template originates from:
-% http://www.LaTeXTemplates.com
-%
-% Authors:
-% Jan Vorisek (jan@vorisek.me)
-% Based on a template by Jan Küster (info@jankuester.com)
-% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
-%
 % License:
 % The MIT License (see included LICENSE file)
-%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
@@ -23,13 +10,15 @@
 \documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
 \usepackage{graphics}
 \usepackage[polish]{babel}
+
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 %	TITLE AND CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
+
 \begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
   \vspace{-\baselineskip} % Required for vertically aligning minipages
 
@@ -67,19 +56,29 @@
 
 \cvsect{o mnie}
 
-\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	\lorem \lorem \lorem \lorem \lorem\\ % Dummy text
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page width for the introduction text
+  \vspace{-\baselineskip} % Required for vertically aligning minipages
+  Jestem studentem 1. roku informatyki na~Akademii Górniczo-Hutniczej w~Krakowie.
+  Programowaniem i~informatyką w ogóle interesuję się od~4 lat, bardzo dobrze znam języki
+  Java i~Kotlin, z~których korzystałem w~moich hobbystycznych projektach.
+  Na studiach i~w~liceum korzystałem z~Pythona i~C++ do~nauki algorytmiki
+  i~również dość dobrze je znam.
+  Potrafię używać systemu Git i~platformy GitHub.
+  Biegle korzystam z~Linuxa i~znam podstawy działania systemów Unixowych.
+  Dobrze znam paradygmat programowania zorientowanego obiektowo i~standardowe praktyki programistyczne.
+  % Do pracy z Javą:
+  % Potrafię pisać dokumentacje w~systemie Javadoc oraz znam biblioteki Spring Boot i~Hibernate.
+  Potrafię pracować w~zespole i~dobrze radzę sobie pod presją, szybko się~uczę.
+
 \end{minipage}
 \hfill % Whitespace between
-\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page for the skills bar chart
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\begin{barchart}{5.5}
 		\baritem{Python}{50}
-		\baritem{Kotlin}{80}
+		\baritem{Kotlin}{90}
 		\baritem{Java}{100}
-  		\baritem{Linux}{70}
+  		\baritem{Linux}{80}
 		\baritem{Git}{60}
 		\baritem{C/C++}{50}
 	\end{barchart}
@@ -98,16 +97,23 @@
 \cvsect{Edukacja}
 
 \begin{entrylist}
-	\entry
-		{2023 -- 2027}
-		{Informatyka -- Studia inżynierskie}
-		{Akademia Górniczo-Hutnicza w Krakowie}
-		{\lorem\lorem}
-      \entry
-		{2019 -- 2023}
-		{Liceum}
-		{VII Liceum Ogólnokształcące w Poznaniu}
-		{\lorem\lorem}
+  \entry
+    {2023 -- 2027}
+    {Studia inżynierskie -- Informatyka}
+    {Akademia Górniczo-Hutnicza w Krakowie}
+    {
+      Od~2023 roku studiuję na~Akademii Górniczo-Hutniczej na~kierunku Informatyka w~programie inżynierskim osiągając bardzo dobre wyniki.
+      Uczestniczyłem jako słuchacz w~konferencjach AGH Cyberkampus i~UJ Studencki Festiwal Informatyczny.
+      Dotychczas w~trakcie studiów zrealizowałem kursy z~zakresu podstaw algorytmiki, programowania, matematyki, użytkowania i~podstaw systemów unixowych oraz kompetencji interpersonalnych.
+    }
+  \entry
+    {2019 -- 2023}
+    {Liceum}
+    {VIII Liceum Ogólnokształcące w Poznaniu}
+    {
+      Uczęszczałem do~klasy o~profilu matematyczno-fizyczno-informatycznym i~zdałem maturę rozszerzoną z~informatyki, matematyki i~języka angielskiego na~bardzo wysokim poziomie.
+      W~trakcie szkoły średniej uzyskałem również certyfikat z~języka angielskiego C1 Advanced (dawniej CAE) z~oceną A (poziom C2).
+    }
 \end{entrylist}
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
@@ -160,10 +166,12 @@
 	\cvsect{Certyfikaty}
 	\begin{itemize}
         \vspace{-\baselineskip} % Required for vertically aligning minipages
-	    \item Angielski: C1 Advanced (dawniej CAE), Ocena A (Poziom C2)
+	    \item 2022 -- Angielski: C1 Advanced (Poziom C2)
 	\end{itemize}
 \end{minipage}
 
 %----------------------------------------------------------------------------------------
 
 \end{document}
+
+% LocalWords:  cyberkampus
