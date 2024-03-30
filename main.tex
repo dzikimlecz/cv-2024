@@ -1,13 +1,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % License:
-% The MIT License (see included LICENSE file)
+% The MIT License
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
 
-\documentclass[8pt]{developercv} % Default font size, values from 8-12pt are recommended
+%%%%%%%%%%%%%%%%
+% KONFIGURACJA %
+%%%%%%%%%%%%%%%%
+
+\documentclass[8pt]{developercv} % Rozmiar czcionki (8-12 pt)
 \usepackage{graphics}
 \usepackage[polish]{babel}
 
@@ -15,25 +16,25 @@
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	TITLE AND CONTACT INFORMATION
-% ----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%
+% NAZWISKO I KONTAKT %
+%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
-  \vspace{-\baselineskip} % Required for vertically aligning minipages
+\begin{minipage}[t]{0.45\textwidth} % 45% szerokości na nazwisko
+  \vspace{-\baselineskip} % Ustawia minipage w osi poziomej
 
-  \colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Jan}}}}} % First name
+  \colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Jan}}}}} % Imie
 
-  \colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Pulkowski}}}}} % Last name
+  \colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Pulkowski}}}}} % Nazwisko
 
   \vspace{6pt}
-  \colorbox{black}{{\huge\textcolor{white}{Student Informatyki}}} % Last name
+  \colorbox{black}{{\huge\textcolor{white}{Student Informatyki}}} % Tytuł zawodowy
 \end{minipage}
-\begin{minipage}[t]{0.3\textwidth} % 30% of the page width for the row of icons
-  \vspace{-\baselineskip} % Required for vertically aligning minipages
+\begin{minipage}[t]{0.3\textwidth}  % 45% szerokości na ikony
+  \vspace{-\baselineskip} % Ustawia minipage w osi poziomej
 
-  % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
-  % Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+  % \icon{nazwa}{rozmiar}{tekst}
+  % lista ikon w fontawesome.pdf
   \icon{MapMarker}{12}{Kraków/Poznań}\\
   \icon{Phone}{12}{+48 783 254 579}\\
   \icon{At}{12}{\href{mailto:pulkowski.jan.it@gmail.com}{pulkowski.jan.it@gmail.com}}\\
@@ -43,7 +44,7 @@
 \hfill
 \begin{minipage}[t]{0.2\textwidth}
 
-  \vspace{-\baselineskip} % Required for vertically aligning minipages
+  \vspace{-\baselineskip} % Ustawia minipage w osi poziomej
   \includegraphics*[width=0.9\textwidth]{zdjecie}
 
 \end{minipage}
@@ -51,14 +52,14 @@
 
 \vspace{0.5cm}
 
-%----------------------------------------------------------------------------------------
-%	INTRODUCTION, SKILLS AND TECHNOLOGIES
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%
+% WSTĘP, UMIEJĘTNOŚCI %
+%%%%%%%%%%%%%%%%%%%%%%%
 
 \cvsect{o mnie}
 
-\begin{minipage}[t]{0.5\textwidth} % 50% of the page width for the introduction text
-  \vspace{-\baselineskip} % Required for vertically aligning minipages
+\begin{minipage}[t]{0.5\textwidth} % 50% szerokości strony na informacje
+  \vspace{-\baselineskip} % Ustawia minipage w osi poziomej
   Jestem studentem 1. roku na~kierunku Informatyka na~Akademii Górniczo-Hutniczej w~Krakowie.
   Programowaniem i~informatyką interesuję się od~4 lat, bardzo dobrze znam języki
   Java i~Kotlin, z~których korzystałem w~moich hobbystycznych projektach.
@@ -72,9 +73,9 @@
   Potrafię pracować w~zespole i~dobrze radzę sobie pod presją, szybko się~uczę.
 
 \end{minipage}
-\hfill % Whitespace between
-\begin{minipage}[t]{0.45\textwidth} % 45% of the page for the skills bar chart
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+\hfill % Przerwa
+\begin{minipage}[t]{0.45\textwidth} % 45% szerokości strony na wykres umiejętności
+	\vspace{-\baselineskip}
 	\begin{barchart}{5.5}
 		\baritem{Python}{50}
 		\baritem{Kotlin}{90}
@@ -85,15 +86,17 @@
 	\end{barchart}
 \end{minipage}
 
+
+% bąbelki jakieś idk
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \begin{center}													 %
 % 	\bubbles{6/Intellij Idea, 3/Office, 4/Spring Boot, 5/JUnit}		 %
 % \end{center}														 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%
+% EDUKACJA %
+%%%%%%%%%%%%
 
 \cvsect{Edukacja}
 
@@ -116,9 +119,10 @@
       W~trakcie szkoły średniej uzyskałem również certyfikat z~języka angielskiego C1 Advanced (dawniej CAE) z~oceną A (poziom C2).
     }
 \end{entrylist}
-%----------------------------------------------------------------------------------------
-%	EXPERIENCE
-%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROJEKTY/DOŚWIADCZENIE ZAWODOWE %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cvsect{projekty programistyczne}
 
@@ -141,12 +145,12 @@
 \end{entrylist}
 
 
-%----------------------------------------------------------------------------------------
-%	ADDITIONAL INFORMATION
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%
+% DODATKOWE INFORMACJE %
+%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[t]{0.3\textwidth}
-  \vspace{-\baselineskip} % Required for vertically aligning minipages
+  \vspace{-\baselineskip}
 
   \cvsect{Języki Obce}
 
@@ -155,7 +159,7 @@
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.3\textwidth}
-  \vspace{-\baselineskip} % Required for vertically aligning minipages
+  \vspace{-\baselineskip}
 
   \cvsect{Zainteresowania}
 
@@ -165,7 +169,7 @@
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.35\textwidth}
-  \vspace{-\baselineskip} % Required for vertically aligning minipages
+  \vspace{-\baselineskip}
   \cvsect{Certyfikaty}
 
   Lipiec 2022 -- C1 Advanced (Język angielski, poziom C2)
