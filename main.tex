@@ -4,38 +4,38 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%
-% KONFIGURACJA %
-%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+% CONFIGURATION %
+%%%%%%%%%%%%%%%%%
 
-\documentclass[8pt]{developercv} % Rozmiar czcionki (8-12 pt)
+\documentclass[8pt]{developercv} % Font Size (8-12 pt)
 \usepackage{graphics}
-\usepackage[polish]{babel}
+\usepackage[english]{babel}
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%
-% NAZWISKO I KONTAKT %
-%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% NAME AND CONTACT INFO %
+%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.45\textwidth} % 45% szerokości na nazwisko
-  \vspace{-\baselineskip} % Ustawia minipage w osi poziomej
+\begin{minipage}[t]{0.45\textwidth} % 45% of width for name
+  \vspace{-\baselineskip} % Required for aligning pages vertically
 
-  \colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Jan}}}}} % Imie
+  \colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Jan}}}}} % First name
 
-  \colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Pulkowski}}}}} % Nazwisko
+  \colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Pulkowski}}}}} % Surname
 
   \vspace{6pt}
-  \colorbox{black}{{\huge\textcolor{white}{Student Informatyki}}} % Tytuł zawodowy
+  \colorbox{black}{{\huge\textcolor{white}{Computer Science Student}}} % Job title
 \end{minipage}
-\begin{minipage}[t]{0.3\textwidth}  % 45% szerokości na ikony
-  \vspace{-\baselineskip} % Ustawia minipage w osi poziomej
+\begin{minipage}[t]{0.3\textwidth}  % 45% of width for icons
+  \vspace{-\baselineskip} % Required for aligning pages vertically
 
-  % \icon{nazwa}{rozmiar}{tekst}
-  % lista ikon w fontawesome.pdf
-  \icon{MapMarker}{12}{Kraków/Poznań}\\
+  % \icon{name}{size}{text}
+  % list of icons in fontawesome.pdf
+  \icon{MapMarker}{12}{Krakow/Poznan -- Poland}\\
   \icon{Phone}{12}{+48 783 254 579}\\
   \icon{At}{12}{\href{mailto:pulkowski.jan.it@gmail.com}{pulkowski.jan.it@gmail.com}}\\
   \icon{Github}{12}{\href{https://github.com/pulkowski-jan}{pulkowski-jan}}\\
@@ -44,7 +44,7 @@
 \hfill
 \begin{minipage}[t]{0.2\textwidth}
 
-  \vspace{-\baselineskip} % Ustawia minipage w osi poziomej
+  \vspace{-\baselineskip}  % Required for aligning pages vertically
   \includegraphics*[width=0.99\textwidth]{zdjecie}
 
 \end{minipage}
@@ -52,29 +52,24 @@
 
 \vspace{0.5cm}
 
-%%%%%%%%%%%%%%%%%%%%%%%
-% WSTĘP, UMIEJĘTNOŚCI %
-%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+% INTRODUCTION %
+%%%%%%%%%%%%%%%%
 
-\cvsect{o mnie}
+\cvsect{about me}
 
-\begin{minipage}[t]{0.5\textwidth} % 50% szerokości strony na informacje
-  \vspace{-\baselineskip} % Ustawia minipage w osi poziomej
-  Jestem studentem 1. roku na~kierunku Informatyka na~Akademii Górniczo-Hutniczej w~Krakowie.
-  Programowaniem i~informatyką interesuję się od~4 lat, bardzo dobrze znam języki
-  Java i~Kotlin, z~których korzystam w~moich hobbystycznych projektach.
-  Na studiach i~w~liceum używam Pythona i~C++ do~nauki algorytmiki
-  i~również dość dobrze znam te języki.
-  Umiem obsłużyć Linuxa i~znam podstawy działania systemów unixowych.
-  Potrafię używać systemu Git i~platformy Github.
-  Dobrze znam paradygmat programowania zorientowanego obiektowo i~standardowe praktyki programistyczne.
-  % Do pracy z Javą:
-  % Potrafię pisać dokumentacje w~systemie Javadoc oraz znam biblioteki Spring Boot i~Hibernate.
-  Potrafię pracować w~zespole i~dobrze radzę sobie pod presją czasu, szybko się~uczę.
-
+\begin{minipage}[t]{0.5\textwidth} % 50% of width for about info
+  \vspace{-\baselineskip}  % Required for aligning pages vertically
+  I~am 1st year student of Computer Science (in Polish) at the AGH University of Krakow.
+  Programming and computer science have been interesting me for 4 years, I~know Java and Kotlin languages thoroughly,
+  as I've~been using them in my personal projects.
+  During college and high school I've~learnt algorithms and programming with C++ and Python and I~feel confident with them too.
+  I~can use Linux and know basics of Unix-like operating systems, as~well as Git and GitHub platforms.
+  Moreover I~know Object-oriented paradigm and standard programming practices.
+  I'm~able to~work in team, perform under time pressure, and learn quickly.
 \end{minipage}
-\hfill % Przerwa
-\begin{minipage}[t]{0.45\textwidth} % 45% szerokości strony na wykres umiejętności
+\hfill % Empty space
+\begin{minipage}[t]{0.45\textwidth} % 45% of width for skills chart.
 	\vspace{-\baselineskip}
 	\begin{barchart}{5.5}
 		\baritem{Python}{50}
@@ -87,125 +82,126 @@
 \end{minipage}
 
 
-% bąbelki jakieś idk
+% some bubbles idk
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \begin{center}													 %
 % 	\bubbles{6/Intellij Idea, 3/Office, 4/Spring Boot, 5/JUnit}		 %
 % \end{center}														 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%
-% EDUKACJA %
-%%%%%%%%%%%%
+%%%%%%%%%%%%%
+% EDUCATION %
+%%%%%%%%%%%%%
 
-\cvsect{Edukacja}
+\cvsect{education}
 
 \begin{entrylist}
   \entry
     {2023 -- 2027}
-    {Studia inżynierskie -- Informatyka}
-    {Akademia Górniczo-Hutnicza w Krakowie}
+    {Engineers degree -- Computer Science}
+    {AGH University of Krakow}
     {
-      Od~2023 roku studiuję na~Akademii Górniczo-Hutniczej na~kierunku Informatyka w~programie inżynierskim osiągając bardzo dobre wyniki.
-      Uczestniczyłem jako słuchacz w~konferencjach AGH Cyberkampus i~UJ Studencki Festiwal Informatyczny.
-      Dotychczas w~trakcie studiów zrealizowałem kursy z~zakresu podstaw algorytmiki, programowania, matematyki, użytkowania i~podstaw systemów unixowych oraz kompetencji interpersonalnych.
+      I've been studying Computer science at AGH University of Krakow since 2023 achieving high grades.
+      I attended AGH Cyberkampus and SFI IT conferences as a listener.
+      As of now I passed courses in the range of basics of algorithms, programming and mathematics, usage of Unix-like systems, and interpersonal skills.
     }
   \entry
     {2019 -- 2023}
-    {Liceum}
+    {High School}
     {VIII Liceum Ogólnokształcące w Poznaniu}
     {
-      Uczęszczałem do~klasy o~profilu matematyczno-fizyczno-informatycznym i~zdałem maturę rozszerzoną z~informatyki, matematyki i~języka angielskiego na~bardzo wysokim poziomie.
-      Podczas nauki w~szkole średniej uzyskałem również certyfikat z~języka angielskiego C1 Advanced (dawniej CAE) z~oceną A (poziom C2).
+      I attended class with extended courses of mathematics, computer science, and physics and I passed Matura exams in mathematics, computer science and English with high grades.
+      Furthermore, during my education in high school I obtained Cambridge Certificate in Advanced English with grade A (C2 level).
     }
 \end{entrylist}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% PROJEKTY/DOŚWIADCZENIE ZAWODOWE %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+% Job Experiece %
+%%%%%%%%%%%%%%%%%
 
-\cvsect{Doświadczenie}
+\cvsect{Job experience}
 
 \begin{entrylist}
   \entry
     {2020 -- 2023}
-    {Obsługa informatyczna gabinetu lekarskiego}
+    {IT services for a doctor's office}
     {Indywidualna Specjalistyczna Praktyka Lekarska Anna Mania}
     {
-      Realizacja statycznej strony internetowej przy użyciu HTML/CSS.
-      Opracowanie programu do~układania planów zajęć studentów oraz podliczania czasu pracy prowadzących dla~osoby za~to~odpowiedzialnej.
-      GUI w~JavaFX, baza danych z~lokalnym serwerem zrealizowane w~Spring Boot.
+      Design of static website with use of HTML/CSS.
+      Development of university classes scheduling system and collecting work time of lecturers,
+      GUI implementation: JavaFX, local server and database: Spring Boot.
       \href{https://github.com/pulkowski-jan/timetablescheduler}{
         \textcolor{blue}{\underline{GitHub}}
       }
     }
 \end{entrylist}
 
-\cvsect{projekty programistyczne}
+\cvsect{Personal Projects}
 
 \begin{entrylist}
   \entry
     {2023 -- \ldots}
     {LibGtfsKt}
-    {\icon{Github}{5}{\href{https://github.com/pulkowski-jan/libgtfskt-core}{\underline{Kod}}}}
+    {\icon{Github}{5}{\href{https://github.com/pulkowski-jan/libgtfskt-core}{\underline{Code}}}}
     {
-      Biblioteka umożliwiająca pobieranie informacji o~rozkładach jazdy komunikacji miejskiej operatorów obsługujących system GTFS.
-      Docelowo będzie możliwe zapisywanie i~manipulowanie danymi w~bazach relacyjnych.
-      \texttt{Kotlin}\slashsep\texttt{Hibernate}
+      Library intended for fetching info about public transit schedules, whose agencies implement GTFS system.
+      As a target I plan providing interface for storing and manipulating the data in relational databases.
+      \\\texttt{Kotlin}\slashsep\texttt{Hibernate}
     }
   \entry
     {2020 -- 2021}
     {Discord chess}
-    {\icon{Github}{5}{\href{https://github.com/pulkowski-jan/Discord-chess}{\underline{Kod}}}}
+    {\icon{Github}{5}{\href{https://github.com/pulkowski-jan/Discord-chess}{\underline{Code}}}}
     {
-      W~pełni funkcjonalny bot do~komunikatora Discord symulujący grę w~szachy 2 graczy.
-      Gra jest na~bieżąco wizualizowana poprzez generowane grafiki.
-      Symulacja gry w~szachy jest realizowana poprzez samodzielną bibliotekę, również mojego autorstwa.
+      Fully-functional bot for Discord messenger simulating chess game of 2 players.
+      Game is being visualised on the fly with use of generated graphics
+      Game simulation module is an independent library, also of my authorship.
       \\\texttt{Java}\slashsep\texttt{JUnit 5}
     }
 \end{entrylist}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%
-% DODATKOWE INFORMACJE %
-%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+% FURTHER INFORMATION %
+%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[t]{0.3\textwidth}
   \vspace{-\baselineskip}
 
-  \cvsect{Języki Obce}
+  \cvsect{Languages}
 
-  \textbf{Angielski} -- zaawansowany (C2)\\
-  \textbf{Niemiecki} -- komunikatywny
+  \textbf{Polish} -- native\\
+  \textbf{English} -- proficient (C2)\\
+  \textbf{German} -- basic
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.3\textwidth}
   \vspace{-\baselineskip}
+  \cvsect{Hobbies}
 
-  \cvsect{Zainteresowania}
-
-  Moje zainteresowania obejmują informatykę i~matematykę,
-  lubię rozwiązywać wszelkiego rodzaju problemy logiczne.
-  Interesuję się również polityką, literaturą piękną i~malarstwem nowoczesnym.
+  I find mathematics and computer science interesting,
+  I enjoy solving all kinds of logical problems.
+  Other fields of my interest consist of politics, contemporary art, and literature.
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.35\textwidth}
   \vspace{-\baselineskip}
-  \cvsect{Certyfikaty}
+  \cvsect{Certifications}
 
-  Lipiec 2022 -- C1 Advanced (Język angielski, poziom C2)
+  July 2022 -- Cambridge Certificate in Advanced English (C2 level)
 \end{minipage}
 
 %----------------------------------------------------------------------------------------
 
 \vspace{22pt}
 
-\centering\begin{minipage}{0.6\linewidth}
+\centering\begin{minipage}{0.8\linewidth}
   \centering\textit{
-  Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko.
-}
+    en: I allow for processing my personal data as a mean of recruitment to the post for which I have applied.\\
+    pl: Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko.
+  }
 \end{minipage}
 
 \end{document}
 
-% LocalWords:  cyberkampus
+% LocalWords:  cyberkampus AGH Pulkowski Matura
